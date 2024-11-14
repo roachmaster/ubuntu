@@ -10,7 +10,7 @@ sudo apt update && sudo apt upgrade -y
 echo "Configuring UFW firewall..."
 sudo ufw allow OpenSSH
 sudo ufw allow http
-sudo ufw allow https
+sudo ufw allow 443/tcp
 sudo ufw enable
 
 # Step 3: Install essential utilities
